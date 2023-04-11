@@ -104,3 +104,13 @@ h2{
     color: white;
     font-weight: bold;
 }
+
+/*Status classes*/
+.winning-team{
+    border: 8px solid greenyellow;
+    box-sizing: border-box;
+}
+.losing-team{
+    border: 8px solid rgb(255, 47, 47);
+    box-sizing: border-box;
+}

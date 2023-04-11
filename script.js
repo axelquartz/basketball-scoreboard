@@ -1,3 +1,7 @@
+//Players containers for color status
+let homeContainer = document.getElementById('home-container')
+let guestContainer = document.getElementById('guest-container')
+
 //Points
 let homePoints = 0;
 let guestPoints = 0;
@@ -24,10 +28,23 @@ let resetGame = document.getElementById('reset-button')
 function colorStatus () {
     if(homePoints > guestPoints){
         console.log('Home is winning')
+        homeContainer.classList.add('winning-team');
+        homeContainer.classList.remove('losing-team')
+        guestContainer.classList.add('losing-team')
+        guestContainer.classList.remove('winning-team')
+
     }else if (homePoints < guestPoints){
         console.log('Guest is winning')
+        homeContainer.classList.add('losing-team');
+        homeContainer.classList.remove('winning-team')
+        guestContainer.classList.add('winning-team')
+        guestContainer.classList.remove('losing-team')
     }else{
         console.log('Tied game')
+        homeContainer.classList.remove('winning-team')
+        homeContainer.classList.remove('losing-team')
+        guestContainer.classList.remove('winning-team')
+        guestContainer.classList.remove('losing-team')
     }
 }
 
