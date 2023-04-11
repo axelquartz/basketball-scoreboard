@@ -41,6 +41,8 @@ h2{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Buttons states*/
 .points-buttons button{
     width: 45px;
     height: 45px;
@@ -64,6 +66,39 @@ h2{
     width: 45px;
     height: 45px;
     margin: 0 4px;
+    border: solid 2px black;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    font-weight: bold;
+}
+
+/*Resent button states*/
+#reset-button{
+    width: 500px;
+    height: 45px;
+    margin: 100px auto;
+    display: block;
+    border: solid 2px black;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+#reset-button:hover{
+    width: 500px;
+    height: 45px;
+    margin: 100px auto;
+    display: block;
+    border: solid 2px black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#reset-button:active{
+    width: 500px;
+    height: 45px;
+    margin: 100px auto;
+    display: block;
     border: solid 2px black;
     background-color: rgb(105, 105, 105);
     color: white;
