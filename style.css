@@ -1,0 +1,12 @@
+body{
+}
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.player-container{
+    background-color: aqua;
+    width: 400px;
+    text-align: center;
+}
